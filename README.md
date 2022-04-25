@@ -42,7 +42,7 @@ $ bash build.sh
 run `build-audio-only.sh` for audio only version
 
 ```
-$ sudio wasm/build-scripts/install-deps.sh
+$ sudo wasm/build-scripts/install-deps.sh
 $ bash build-audio-only.sh
 ```
 
