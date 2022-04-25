@@ -15,26 +15,35 @@ If you have any issues for this repository, please put it here: https://github.c
 ## Setup
 
 ```
-$ git clone https://github.com/ffmpegwasm/ffmpeg.wasm-core
-$ git submodule update --init --recursive
+$ git clone --recurse-submodules https://github.com/CyberLinkCorp/ffmpeg.wasm-core
 ```
 
 ## Build
 
-1. Use docker (easy way)
-
-Install latest docker and run `build-with-docker.sh`.
+Install emsdk
 
 ```
-$ bash build-with-docker.sh
+$ git clone https://github.com/emscripten-core/emsdk.git
+$ cd emsdk
+$ ./emsdk install 2.0.8
+$ ./emsdk activate 2.0.8
+$ echo 'source "$(pwd)/emsdk_env.sh"' >> $HOME/.bash_profile
+$ source ./emsdk_env.sh
+$ cd ..
 ```
 
-2. Install emsdk (unstable way)
-
-Setup the emsdk from [HERE](https://emscripten.org/docs/getting_started/downloads.html) and run `build.sh`.
+run `build.sh` for full version
 
 ```
+$ sudo wasm/build-scripts/install-deps.sh
 $ bash build.sh
+```
+
+run `build-audio-only.sh` for audio only version
+
+```
+$ sudio wasm/build-scripts/install-deps.sh
+$ bash build-audio-only.sh
 ```
 
 If nothing goes wrong, you can find JavaScript files in `wasm/packages/core/dist`.
