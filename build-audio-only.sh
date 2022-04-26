@@ -10,7 +10,7 @@ run() {
     SECONDS=0
     $SCRIPT_ROOT/$name.sh
     duration=$SECONDS
-    echo -e "[1;33m$(($duration / 60)) minutes and $(($duration % 60)) seconds elapsed.\e[0m"
+    echo -e "\e[1;33m$(($duration / 60)) minutes and $(($duration % 60)) seconds elapsed\e[0m"
   done
 }
 
