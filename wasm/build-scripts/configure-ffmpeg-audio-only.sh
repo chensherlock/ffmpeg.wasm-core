@@ -9,8 +9,8 @@ FLAGS=(
   --disable-network
   --disable-autodetect
   --enable-small
-  --enable-decoder=pcm*,adpcm*,mp3*,flac,opus
-  --enable-encoder=pcm*,adpcm*,libmp3lame,flac,opus
+  --enable-decoder=pcm*,adpcm*,mp3*,flac,opus,vorbis
+  --enable-encoder=pcm*,adpcm*,libmp3lame,flac,opus,vorbis
   --enable-demuxer=pcm*,wav,mp3,flac,opus,ogg,caf
   --enable-muxer=pcm*,wav,mp3,flac,opus,caf
   --enable-parser=mpegaudio,opus
