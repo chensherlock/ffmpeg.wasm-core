@@ -16,6 +16,7 @@ If you have any issues for this repository, please put it here: https://github.c
 
 ```
 $ git clone --recurse-submodules https://github.com/CyberLinkCorp/ffmpeg.wasm-core
+$ cd ffmpeg.wasm-core
 ```
 
 ## Build
