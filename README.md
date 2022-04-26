@@ -23,26 +23,24 @@ $ git clone --recurse-submodules https://github.com/CyberLinkCorp/ffmpeg.wasm-co
 Install emsdk
 
 ```
-$ git clone https://github.com/emscripten-core/emsdk.git
-$ cd emsdk
-$ ./emsdk install 2.0.8
-$ ./emsdk activate 2.0.8
-$ echo 'source "$(pwd)/emsdk_env.sh"' >> $HOME/.bash_profile
-$ source ./emsdk_env.sh
-$ cd ..
+$ ./install-emsdk.sh
+$ source $HOME/.bash_profile
+```
+
+Install Dependencies
+```
+$ sudo ./install-deps.sh
 ```
 
 run `build.sh` for full version
 
 ```
-$ sudo wasm/build-scripts/install-deps.sh
 $ bash build.sh
 ```
 
 run `build-audio-only.sh` for audio only version
 
 ```
-$ sudo wasm/build-scripts/install-deps.sh
 $ bash build-audio-only.sh
 ```
 
